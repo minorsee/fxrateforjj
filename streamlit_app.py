@@ -4,6 +4,20 @@ import pandas as pd
 import time
 import streamlit as st
 import io
+import subprocess
+import os
+
+# Install Playwright browsers on first run
+@st.cache_resource
+def install_playwright():
+    try:
+        subprocess.run(["playwright", "install", "chromium"], check=True, capture_output=True)
+        return True
+    except:
+        return False
+
+# Install browsers
+install_playwright()
 
 st.title("📊 SGD Exchange Rate Averages")
 st.write("Click the button below to fetch currency exchange rate averages and download the Excel file.")
