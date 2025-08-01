@@ -1,5 +1,9 @@
 import json
-from playwright.sync_api import sync_playwright
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
 import streamlit as st
@@ -17,32 +21,43 @@ def load_currency_data():
 # Function to extract average rates (7, 30, 90 days) with retry
 def extract_averages_from_url(url, max_retries=3):
     for attempt in range(1, max_retries + 1):
+        driver = None
         try:
-            with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
-                page = browser.new_page()
-                print(f"🌐 Attempt {attempt}: {url}")
-                page.goto(url, wait_until="domcontentloaded", timeout=60000)
-                page.wait_for_timeout(8000)  # let JS render
-
-                rows = page.locator('div.flex.flex-row')
-                for i in range(rows.count()):
-                    row = rows.nth(i)
-                    spans = row.locator('span')
-                    if spans.count() < 4:
-                        continue
-
-                    label = spans.nth(0).inner_text().strip()
-                    if label.lower() == "average":
-                        avg_7 = spans.nth(1).inner_text().strip()
-                        avg_30 = spans.nth(2).inner_text().strip()
-                        avg_90 = spans.nth(3).inner_text().strip()
-                        browser.close()
-                        return avg_7, avg_30, avg_90
-
-                browser.close()
+            # Setup Chrome options for headless mode
+            chrome_options = Options()
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--disable-gpu")
+            chrome_options.add_argument("--window-size=1920,1080")
+            
+            driver = webdriver.Chrome(options=chrome_options)
+            print(f"🌐 Attempt {attempt}: {url}")
+            
+            driver.get(url)
+            time.sleep(8)  # let JS render
+            
+            # Find all div elements with flex flex-row class
+            rows = driver.find_elements(By.CSS_SELECTOR, 'div.flex.flex-row')
+            
+            for row in rows:
+                spans = row.find_elements(By.TAG_NAME, 'span')
+                if len(spans) < 4:
+                    continue
+                
+                label = spans[0].text.strip()
+                if label.lower() == "average":
+                    avg_7 = spans[1].text.strip()
+                    avg_30 = spans[2].text.strip()
+                    avg_90 = spans[3].text.strip()
+                    driver.quit()
+                    return avg_7, avg_30, avg_90
+            
+            driver.quit()
         except Exception as e:
             print(f"⚠️ Error on attempt {attempt} for {url}: {e}")
+            if driver:
+                driver.quit()
             time.sleep(2)  # wait before retry
 
     print(f"❌ Failed to fetch data from {url} after {max_retries} attempts.")
