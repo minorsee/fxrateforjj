@@ -1,0 +1,254 @@
+[
+  {
+    "from_currency": "SGD",
+    "to_currency": "USD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=USD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "THB",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=THB"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "IDR",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=IDR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "CNY",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=CNY"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "MYR",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=MYR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "OMR",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=OMR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "HKD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=HKD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "JPY",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=JPY"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "EUR",
+    "current_rate": 0.66914527,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=EUR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "GBP",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=GBP"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "VND",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=VND"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "AUD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=AUD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "PHP",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=PHP"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "TWD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=TWD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "NZD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=NZD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "INR",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=INR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "QAR",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=QAR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "MOP",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=MOP"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "AED",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=AED"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "SAR",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=SAR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "KRW",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=KRW"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "CAD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=CAD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "CHF",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=CHF"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "DKK",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=DKK"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "BRL",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=BRL"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "SEK",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=SEK"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "LKR",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=LKR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "KWD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=KWD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "IQD",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=IQD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "EGP",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=EGP"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "KZT",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=KZT"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "PKR",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=PKR"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "TRY",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=TRY"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "UZS",
+    "current_rate": 100.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=UZS"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "MAD",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=MAD"
+  },
+  {
+    "from_currency": "SGD",
+    "to_currency": "MXN",
+    "current_rate": 1.0,
+    "seven_day_average": null,
+    "url": "https://www.xe.com/currencyconverter/convert/?Amount=1&From=SGD&To=MXN"
+  }
+]
