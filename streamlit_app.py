@@ -39,18 +39,18 @@ def extract_averages_from_url(url, max_retries=3):
                 page.goto(url, wait_until="domcontentloaded", timeout=60000)
                 page.wait_for_timeout(8000)  # let JS render
 
-                rows = page.locator('div.flex.flex-row')
-                for i in range(rows.count()):
-                    row = rows.nth(i)
-                    spans = row.locator('span')
-                    if spans.count() < 4:
-                        continue
+                # Look for the Average row in the statistics table
+                average_elements = page.get_by_text("Average").all()
+                for elem in average_elements:
+                    parent = elem.locator('..')
+                    parent_text = parent.inner_text()
 
-                    label = spans.nth(0).inner_text().strip()
-                    if label.lower() == "average":
-                        avg_7 = spans.nth(1).inner_text().strip()
-                        avg_30 = spans.nth(2).inner_text().strip()
-                        avg_90 = spans.nth(3).inner_text().strip()
+                    # Split the text and extract the three average values
+                    parts = parent_text.split('\t')
+                    if len(parts) >= 4 and parts[0].strip().lower() == "average":
+                        avg_7 = parts[1].strip()
+                        avg_30 = parts[2].strip()
+                        avg_90 = parts[3].strip()
                         browser.close()
                         return avg_7, avg_30, avg_90
 
